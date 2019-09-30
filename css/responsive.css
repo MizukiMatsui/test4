@@ -1,0 +1,36 @@
+
+  
+@media (max-width:1220px) {
+  .tile3 {
+    width :50%;
+  }
+  .toptext {
+    margin-top :400px;
+  }
+  .top h1 {
+      font-size : 47px;
+      line-height : 24px;
+      font-family: "Courier New";
+  }
+  .top h2 {
+      font-size : 20px;
+      font-family: "arial unicode ms";
+      padding-bottom :40px ;
+  }
+  .header-right {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .toptext {
+    margin-top :240px;
+  }
+
+  }
+
+@media (max-width:680px) {
+  .tile3 {
+    width :50%;
+}
+}

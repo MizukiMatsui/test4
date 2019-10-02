@@ -350,3 +350,41 @@ footer .footlist {
   width : 62%;
   margin:60px auto;
 }
+
+.activity {
+  display: inline-block;
+}
+
+.activity .media {
+  margin-top :210px;
+}
+.activity .list {
+font-size: 22px;
+font-family :"arial unicode ms";
+line-height: 45px;
+}
+.activity .title {
+  display: inline-block;
+  font-family: "arial unicode ms";
+  font-size: 21px;
+  letter-spacing: 2px;
+  padding : 8px 21px 6px 22px;
+  margin:40px 4% 0 0;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+}
+.privacy .policy {
+  margin-top :230px;
+}
+.policy .title {
+  display: inline-block;
+  font-family: "arial unicode ms";
+  font-size: 21px;
+  letter-spacing: 2px;
+  padding : 8px 21px 6px 22px;
+  margin:40px 4% 10px 0;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+}

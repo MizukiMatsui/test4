@@ -4,11 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="ページタイトル" />
+  <meta property="og:description" conent="ページの概要" />
+  <link rel="shortcut icon" href="image/favicon.ico">
   <link rel="stylesheet" href="css/topstyle.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <title>KATAKOTO カタコト</title>
+  <script>
+  $(function(){
+     $('a[href^=#]').click(function() {
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        var speed = 500; // スクロールの速度（ミリ秒）
+        $('body,html').animate({scrollTop:position}, speed, 'swing'); // スクロール方式
+        return false;
+     });
+  });
+  </script>
 </head>
 <body id="top">
   <header class="headblock">
@@ -46,7 +61,7 @@
 
       <div class="contents frame clearfix">
         <div class="tile tile2">
-            <a href="product/product01.html"><img src="image/top/top_sm1.png" class="photo"></a>
+          <a href="product/product01.html"><img src="image/top/top_sm1.png" class="photo"></a>
           <a class="ar mark">AR</a>
           <a class="vr mark">VR</a>
           <a class="game mark">GAME</a>
@@ -56,7 +71,7 @@
 
         </div>
         <div class="tile tile2">
-              <a href="product/product02.html"><img src="image/top/top_sl1.png" class="photo"></a>
+          <a href="product/product02.html"><img src="image/top/top_sl1.png" class="photo"></a>
           <a class="ar mark">AR</a>
           <a class="game mark">GAME</a>
           <h3>スカイレター<span class="comment">　/　2019</span></h3>
@@ -65,7 +80,7 @@
 
         </div>
         <div class="tile tile3">
-              <a href="product/product03.html"><img src="image/top/top_st1.jpg" class="photo"></a>
+          <a href="product/product03.html"><img src="image/top/top_st1.jpg" class="photo"></a>
           <a class="ar mark">AR</a>
           <a class="vr mark">VR</a>
           <a class="game mark">GAME</a>
@@ -143,7 +158,7 @@
       </div>
       <a class="contact link" a href="mailto:katakoto.std@gmail.com?subject=◯◯についての問い合わせ
       &amp;body=お問い合わせ内容をご記入ください">>お問い合わせはこちら<span class="fas fa-envelope contact-mark"></span></a>
-      
+
     </div>
   </div>
 
@@ -151,13 +166,15 @@
     <div class="frame">
       <ul class="footlist">
         <li><a href="other/privacy.html">個人情報の取り扱い<a></li>
-          <li><a link="#">なにか考える<a></li>
-          <li><a link="#">もう１つなにか<a></li>
+        <li><a link="#">なにか考える<a></li>
+        <li><a link="#">もう１つなにか<a></li>
       </ul>
 
       <h5>2019 All rights reserved  KATAKOTO </h5>
     </div>
   </footer>
+
+
 
 </body>
 </html>
